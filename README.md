@@ -1,1 +1,50 @@
 # estilo.css
+body{
+    background-color: #282828;
+    color: #fff;
+}
+
+.cabecalho{
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;   
+}
+.cabecalho .logo{
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 30px;
+}
+.cabecalho .menu li a{
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet';
+}
+.cabecalho .menu li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.home{
+    background-color: aqua;
+    display: flex;
+
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: linear-gradient(90deg, rgba(0,0,0, .85), rgba(0,0,0, .7) 35%, transparent 65%);
+}
